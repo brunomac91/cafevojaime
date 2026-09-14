@@ -200,7 +200,8 @@ body { counter-reset: section; }
   justify-content: space-between;
   padding: 1.1rem 0;
 }
-.nav-right { display: flex; align-items: center; gap: 1.2rem; flex-shrink: 0; }
+.nav-left { display: flex; align-items: center; gap: 1.3rem; min-width: 0; }
+.nav-end { display: flex; align-items: center; gap: 1.2rem; flex-shrink: 0; }
 .brand { display: flex; align-items: center; gap: 1.3rem; flex-shrink: 0; }
 .brand-block { display: flex; flex-direction: column; align-items: center; }
 .brand-block img { height: 54px; width: auto; }
