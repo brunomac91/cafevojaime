@@ -19,54 +19,85 @@
   <!-- ============ ÍCONES (sprite SVG) ============ -->
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
     <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H5.5L3 22l.8-4.2A8.5 8.5 0 1 1 21 11.5z"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></symbol>
+    <symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.4 12.4a2 2 0 0 0 2 1.6h7.2a2 2 0 0 0 2-1.6L20 8H6"/><circle cx="9" cy="20" r="1"/><circle cx="17" cy="20" r="1"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 20C5 11.5 11.5 5 20 5c0 8.5-6.5 15-15 15z"/><path d="M5 20c4.5-4.5 8-8 11.5-11.5"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24"><path d="M3 20 9 8l4 6 3-4 5 10z"/></symbol>
+    <symbol id="i-people" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.5"/><path d="M15 14.5c2.8.3 5 2.7 5 5.5"/></symbol>
   </svg>
 
   <!-- ============ TOPBAR ============ -->
   <div class="topbar">
-    <p>Agricultura regenerativa · Origem rastreável · Sítio Tapete Verde, MG <span class="topbar-sep">|</span> <strong>#volteparacasa</strong></p>
+    <div class="container">
+      <p>Agricultura regenerativa · Origem rastreável · Sítio Tapete Verde, MG</p>
+      <p class="topbar-right">
+        <svg class="icon"><use href="#i-leaf"/></svg>
+        <span class="topbar-rule" aria-hidden="true"></span>
+        <strong>#volteparacasa</strong>
+      </p>
+    </div>
   </div>
 
   <!-- ============ HEADER / NAV ============ -->
   <header class="header" id="topo">
     <nav class="nav container">
       <a href="#topo" class="brand">
-        <img src="assets/brand/logo-full-brown.png" alt="Café Vô Jaime">
+        <span class="brand-block">
+          <img src="assets/brand/logo-full-brown.png" alt="Café Vô Jaime">
+          <span class="brand-sub">Raiz · sabor · sustentabilidade</span>
+        </span>
       </a>
-      <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links">
-        <li><a href="#linhas">Nossos Cafés</a></li>
-        <li><a href="#assinaturas">Assinaturas</a></li>
-        <li><a href="#clube">Clube do Vô</a></li>
-        <li><a href="#circulo">Círculo Vô Jaime</a></li>
-        <li><a href="#acessorios">Acessórios</a></li>
-        <li><a href="#b2b">Para Empresas</a></li>
-        <li><a href="#historia">Nossa História</a></li>
-        <li><a href="#contato" class="nav-cta">Comprar</a></li>
-      </ul>
+      <div class="nav-right">
+        <span class="nav-divider" aria-hidden="true"></span>
+        <ul class="nav-links">
+          <li><a href="#linhas">Nossos Cafés</a></li>
+          <li><a href="#assinaturas">Assinaturas</a></li>
+          <li><a href="#clube">Clube do Vô</a></li>
+          <li><a href="#circulo">Círculo Vô Jaime</a></li>
+          <li><a href="#acessorios">Acessórios</a></li>
+          <li><a href="#b2b">Para Empresas</a></li>
+          <li><a href="#historia">Nossa História</a></li>
+        </ul>
+        <span class="nav-divider" aria-hidden="true"></span>
+        <div class="nav-icons">
+          <button type="button" class="icon-btn" aria-label="Buscar"><svg class="icon"><use href="#i-search"/></svg></button>
+          <button type="button" class="icon-btn" aria-label="Carrinho">
+            <svg class="icon"><use href="#i-cart"/></svg>
+            <span class="cart-badge">0</span>
+          </button>
+        </div>
+        <a href="#contato" class="nav-cta">Comprar <svg class="icon"><use href="#i-arrow"/></svg></a>
+        <button class="nav-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
       <div class="nav-backdrop" hidden></div>
     </nav>
   </header>
 
   <!-- ============ HERO ============ -->
   <section class="hero">
-    <div class="container hero-grid">
+    <div class="hero-visual" aria-hidden="true">
+      <img src="assets/illustrations/hero-scene.jpg" alt="">
+    </div>
+    <div class="container hero-inner">
       <div class="hero-copy">
         <span class="eyebrow eyebrow-signature">Raiz, sabor e sustentabilidade</span>
-        <h1>Raízes<br><em>ancestrais</em><br>em cada xícara.</h1>
+        <h1>Café com história de família.</h1>
         <p class="hero-lead">
-          Nosso café nasce da terra, da família e das histórias que atravessam gerações.
-          Da roça de Minas para a sua casa.
+          Do solo de Minas para o seu dia a dia, cafés que carregam a tradição, o cuidado
+          e o legado do Vô Jaime. Mais que café, uma história que continua.
         </p>
         <div class="hero-actions">
-          <a href="#linhas" class="btn btn-primary">Conhecer os cafés</a>
-          <a href="#clube" class="btn btn-ghost">Entrar no Clube do Vô</a>
+          <a href="#linhas" class="btn btn-primary">Conheça nossos cafés <svg class="icon"><use href="#i-arrow"/></svg></a>
+          <a href="#historia" class="btn btn-ghost">Nossa história</a>
         </div>
-      </div>
-      <div class="hero-visual">
-        <img src="assets/illustrations/da-roca.jpg" alt="Lavoura do Sítio Tapete Verde">
-        <p class="hero-caption">Sítio Tapete Verde, Minas Gerais</p>
+        <ul class="trust-row">
+          <li><svg class="icon"><use href="#i-leaf"/></svg><span>Grãos 100%<br>brasileiros</span></li>
+          <li><svg class="icon"><use href="#i-mountain"/></svg><span>Das montanhas<br>de Minas Gerais</span></li>
+          <li><svg class="icon"><use href="#i-people"/></svg><span>Família e<br>tradição</span></li>
+        </ul>
       </div>
     </div>
   </section>
