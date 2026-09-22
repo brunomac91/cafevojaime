@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Área do Assinante | Em breve | Café Vô Jaime</title>
-  <meta name="description" content="A Área do Assinante do Café Vô Jaime está chegando: acompanhe seu plano, suas entregas, suas notas e seus BitCoffees em um só lugar.">
+  <title>Clube do Vô | Café Vô Jaime</title>
+  <meta name="description" content="Entre de graça no Clube do Vô: acumule BitCoffees em cada compra e indicação, suba de nível e troque por café, kits e brindes.">
   <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="favicon-96.png" sizes="96x96" type="image/png">
   <link rel="icon" href="favicon-192.png" sizes="192x192" type="image/png">
@@ -49,7 +49,7 @@
         <ul class="nav-links">
           <li><a href="index.html#linhas">Nossos Cafés</a></li>
           <li><a href="index.html#assinaturas">Assinaturas</a></li>
-          <li><a href="clube.html">Clube do Vô</a></li>
+          <li><a href="clube.html" aria-current="page">Clube do Vô</a></li>
           <li><a href="index.html#circulo">Círculo Vô Jaime</a></li>
           <li><a href="index.html#acessorios">Acessórios</a></li>
           <li><a href="index.html#b2b">Para Empresas</a></li>
@@ -60,7 +60,7 @@
         <span class="nav-divider" aria-hidden="true"></span>
         <div class="nav-icons">
           <button type="button" class="icon-btn" aria-label="Buscar"><svg class="icon"><use href="#i-search"/></svg></button>
-          <a href="membros.html" class="icon-btn" aria-label="Área do assinante" aria-current="page"><svg class="icon"><use href="#i-user"/></svg></a>
+          <a href="membros.html" class="icon-btn" aria-label="Área do assinante"><svg class="icon"><use href="#i-user"/></svg></a>
           <button type="button" class="icon-btn" aria-label="Carrinho">
             <svg class="icon"><use href="#i-cart"/></svg>
             <span class="cart-badge">0</span>
@@ -76,74 +76,95 @@
   </header>
 
   <main>
-    <!-- ============ EM BREVE ============ -->
+    <!-- ============ INTRO ============ -->
     <section class="section section-dark soon">
       <img class="soon-mark" src="assets/brand/symbol-cream.png" alt="" aria-hidden="true">
       <div class="container">
         <div class="soon-copy">
-          <span class="eyebrow eyebrow-light">Área do assinante</span>
-          <span class="soon-badge">Em breve</span>
-          <h1>A área de quem assina o café do Vô está sendo preparada.</h1>
-          <p class="soon-lead">Estamos construindo um espaço só para quem tem um <strong>plano de assinatura</strong>
-          ativo — Raízes do Vô, Sopro Ancestral ou Legado do Vô: seu plano, suas próximas entregas, suas notas
-          e os BitCoffees que você ganha em cada compra, tudo num só lugar. Ainda falta um pouco de torra.</p>
+          <span class="eyebrow eyebrow-light">Fidelidade popular</span>
+          <span class="soon-badge">Grátis, sem mensalidade</span>
+          <h1>Clube do Vô &amp; BitCoffees</h1>
+          <p class="soon-lead">Você não compra só café. Você entra numa comunidade que dá vantagens de
+          verdade em cada compra. Toda compra e toda indicação geram <strong>BitCoffees</strong>, a moeda
+          do clube, para trocar por café, kits e brindes.</p>
           <div class="hero-actions">
-            <a href="#contato" class="btn btn-primary btn-lg">Quero ser avisado <svg class="icon"><use href="#i-arrow"/></svg></a>
+            <a href="#contato" class="btn btn-primary btn-lg">Quero fazer parte <svg class="icon"><use href="#i-arrow"/></svg></a>
             <a href="index.html" class="btn btn-light btn-lg">Voltar ao site</a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ============ O QUE VEM POR AÍ ============ -->
+    <!-- ============ COMO FUNCIONA + NÍVEIS ============ -->
     <section class="section section-cream">
       <div class="container">
         <div class="section-head">
-          <span class="eyebrow">O que vem por aí</span>
-          <h2>Tudo sobre o seu plano, num lugar só</h2>
-          <p>Quando a área abrir, quem já é assinante entra com o cadastro que tem e encontra isto:</p>
+          <span class="eyebrow">Como funciona</span>
+          <h2>Simples, gratuito e vale a pena</h2>
         </div>
 
-        <div class="pillars-grid">
-          <article class="card pillar">
-            <span class="pillar-num">01</span>
-            <h3>Seu plano atual</h3>
-            <p>Qual plano você tem, o que vem na próxima remessa e a opção de pausar, trocar ou cancelar
-            quando quiser.</p>
-          </article>
-          <article class="card pillar">
-            <span class="pillar-num">02</span>
-            <h3>Suas entregas e notas</h3>
-            <p>Histórico de remessas, rastreio, notas fiscais e o saldo acumulativo do plano disponível
-            para resgate futuro.</p>
-          </article>
-          <article class="card pillar">
-            <span class="pillar-num">03</span>
-            <h3>Seus BitCoffees</h3>
-            <p>Saldo e extrato dos BitCoffees que você ganha em cada compra, para trocar por café, kits
-            e brindes.</p>
-          </article>
+        <div class="club-grid">
+          <div class="club-how card">
+            <h3>Como funciona</h3>
+            <ol class="steps">
+              <li><strong>Cadastre-se no clube.</strong> É grátis, sem mensalidade.</li>
+              <li><strong>Receba seu link de indicação</strong> e compartilhe com quem você gosta.</li>
+              <li><strong>Acumule BitCoffees</strong> a cada compra sua e do seu grupo de indicados.</li>
+              <li><strong>Troque por produtos</strong>: café em grão, moído, kits, copos, brindes e edições especiais.</li>
+            </ol>
+            <p class="conversion"><strong>1 BitCoffee = R$ 0,50</strong> em produtos da marca</p>
+          </div>
+
+          <div class="club-tiers">
+            <div class="tier tier-bronze">
+              <h4>VIP Bronze</h4>
+              <p class="tier-req">5 indicados <em>ou</em> 1,5 kg/mês</p>
+              <p class="tier-benefit">até <strong>3%</strong> off nas compras</p>
+            </div>
+            <div class="tier tier-silver">
+              <h4>VIP Prata</h4>
+              <p class="tier-req">10 indicados <em>ou</em> 2,5 kg/mês</p>
+              <p class="tier-benefit">até <strong>5%</strong> off nas compras</p>
+            </div>
+            <div class="tier tier-gold">
+              <h4>VIP Ouro</h4>
+              <p class="tier-req">15 indicados <em>ou</em> +3 kg/mês</p>
+              <p class="tier-benefit">até <strong>8%</strong> off + BitCoffees do grupo</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="seasonal">
+          <h3>Celebramos junto com você</h3>
+          <p>Lives educativas e festivas, sorteios, premiações e promoções exclusivas para membros
+          nas datas mais especiais do ano:</p>
+          <div class="seasonal-tags">
+            <span>Páscoa</span><span>Dia do Trabalhador</span><span>Dia do Indígena</span>
+            <span>Dia das Mães</span><span>Dia dos Namorados</span><span>Dia dos Pais</span>
+            <span>Dia da Consciência Negra</span><span>Natal</span>
+          </div>
         </div>
 
         <div class="example-box">
-          <p><strong>Ainda não assina?</strong> Conheça os
-          <a href="index.html#assinaturas" class="text-link">planos de assinatura</a> ou entre de graça no
-          <a href="clube.html" class="text-link">Clube do Vô</a>.</p>
+          <p><strong>Já assina um plano?</strong> Assinantes também acumulam BitCoffees. Veja a
+          <a href="membros.html" class="text-link">Área do assinante</a> ou aprecie o raro no
+          <a href="index.html#circulo" class="text-link">Círculo Vô Jaime</a>.</p>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- ============ AVISO / CONTATO ============ -->
+  <!-- ============ CTA FINAL / CONTATO ============ -->
   <section class="cta-final" id="contato">
     <div class="container cta-inner">
-      <h2>Quer ser um dos primeiros<br>a entrar?</h2>
-      <p>Chame a gente na comunidade do WhatsApp. Avisamos assim que a Área de Membros abrir e
-      contamos as novidades em primeira mão.</p>
+      <h2>Bora fazer parte<br>do Clube do Vô?</h2>
+      <p>Cadastro grátis e sem mensalidade. Chame a gente na comunidade do WhatsApp para começar a
+      acumular seus BitCoffees.</p>
       <div class="hero-actions">
         <a href="#" class="btn btn-whatsapp btn-lg"><svg class="icon"><use href="#i-chat"/></svg> Comunidade no WhatsApp</a>
         <a href="index.html" class="btn btn-light btn-lg">Voltar ao site</a>
       </div>
+      <p class="cta-note">Sem mensalidade · Sem pegadinha · Válido em todas as compras</p>
     </div>
   </section>
 
