@@ -880,6 +880,25 @@ body { counter-reset: section; }
     rgba(54, 10, 8, 0) 74%
   );
 }
+
+/* Clube do Vô: mesma lógica — foto clara sem degradê embutido */
+.soon.soon-clube {
+  background-image: url("../assets/illustrations/hero_clube.png");
+}
+.soon.soon-clube::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background: linear-gradient(
+    to right,
+    var(--marrom-escuro) 0%,
+    var(--marrom-escuro) 28%,
+    rgba(54, 10, 8, 0.78) 42%,
+    rgba(54, 10, 8, 0.32) 58%,
+    rgba(54, 10, 8, 0) 74%
+  );
+}
 .soon-badge {
   display: block;
   width: fit-content;
@@ -1018,4 +1037,6 @@ body { counter-reset: section; }
      o texto inteiro, então usa um véu escuro uniforme, como o genérico acima. */
   .soon.soon-membros { background-position: 78% 45%; }
   .soon.soon-membros::before { background: rgba(54, 10, 8, 0.6); }
+  .soon.soon-clube { background-position: 68% 35%; }
+  .soon.soon-clube::before { background: rgba(54, 10, 8, 0.6); }
 }
