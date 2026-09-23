@@ -864,7 +864,7 @@ body { counter-reset: section; }
 
 /* Área do assinante: foto mais clara, sem degradê embutido — precisa de véu próprio */
 .soon.soon-membros {
-  background-image: url("../assets/illustrations/hero_membros_novo.png");
+  background-image: url("../assets/illustrations/hero_membros_atual.png");
 }
 .soon.soon-membros::before {
   content: "";
