@@ -187,7 +187,7 @@ body { counter-reset: section; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: var(--paper) url("../assets/illustrations/header.png") no-repeat center 80% / cover;
+  background: var(--marrom-escuro) url("../assets/illustrations/header_novo.png") no-repeat center / cover;
   border-bottom: 1px solid var(--line);
 }
 .header.scrolled { box-shadow: var(--hairline-shadow); }
@@ -211,7 +211,7 @@ body { counter-reset: section; }
   font-weight: 600;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--marrom);
+  color: var(--branco);
   padding: 0.3rem 0;
   white-space: nowrap;
   transition: color 0.2s;
@@ -227,7 +227,7 @@ body { counter-reset: section; }
   width: 20px; height: 20px;
   background: none;
   border: 0;
-  color: var(--ink);
+  color: var(--branco);
   cursor: pointer;
 }
 .icon-btn .icon { width: 20px; height: 20px; }
@@ -264,7 +264,7 @@ body { counter-reset: section; }
 .nav-toggle { display: none; background: none; border: 0; cursor: pointer; padding: 8px; }
 .nav-toggle span {
   display: block; width: 22px; height: 2px;
-  background: var(--ink); margin: 5px 0; border-radius: 2px;
+  background: var(--branco); margin: 5px 0; border-radius: 2px;
   transition: transform 0.3s, opacity 0.3s;
 }
 .nav-backdrop {
