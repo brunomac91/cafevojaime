@@ -356,7 +356,7 @@ body { counter-reset: section; }
 /* Hero — a cena de produto como fundo completo, texto real por cima */
 .hero {
   position: relative;
-  background: var(--creme) url("../assets/illustrations/hero_novo.png") no-repeat right center / contain;
+  background: var(--creme) url("../assets/illustrations/hero_final.png") no-repeat right center / contain;
   border-bottom: 1px solid var(--line);
   overflow: hidden;
 }
