@@ -883,7 +883,7 @@ body { counter-reset: section; }
 
 /* Clube do Vô: mesma lógica — foto clara sem degradê embutido */
 .soon.soon-clube {
-  background-image: url("../assets/illustrations/hero_clube.png");
+  background-image: url("../assets/illustrations/hero_clube_final.png");
 }
 .soon.soon-clube::before {
   content: "";
