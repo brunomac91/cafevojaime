@@ -356,7 +356,7 @@ body { counter-reset: section; }
 /* Hero — a cena de produto como fundo completo, texto real por cima */
 .hero {
   position: relative;
-  background: var(--creme) url("../assets/illustrations/hero_novo.png") no-repeat center 58% / cover;
+  background: var(--creme) url("../assets/illustrations/hero_novo.png") no-repeat right center / contain;
   border-bottom: 1px solid var(--line);
   overflow: hidden;
 }
@@ -985,4 +985,7 @@ body { counter-reset: section; }
 @media (max-width: 700px) {
   .hero-inner { min-height: 0; }
   .hero::before { background: rgba(242, 220, 184, 0.9); }
+  /* Tela estreita: "contain" deixaria a imagem numa faixa fina. Volta a
+     preencher tudo (cover); o véu acima já esconde o que for cortado. */
+  .hero { background-size: cover; background-position: center 58%; }
 }
